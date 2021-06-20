@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<body>
+    <table><tbody>
+        <tr>
+            <td>
+                <a th:href="@{/playvideo}" th:text = "[origin_video]"> ccc</a>
+                <a th:href="@{/playvideo720p}" th:text = "[720p]"></a>
+                <a th:href="@{/playvideo360p}" th:text = "[360p]"></a>
+                <a th:href="@{/download_origin}" th:text = "[download_origin]"></a>
+                <a th:href="@{/download_720p}" th:text = "[download_720p]"></a>
+                <a th:href="@{/download_360p}" th:text = "[download_360p]"></a>
+                <!-- <a th:href="@{/video/__${i}__}" th:text = "  download  "></a> -->
+            </td>
+        </tr>
+    </tbody></table>
+    <video width="1280" height="720"  controls="controls" autoplay="autoplay">
+        <source src="/getVideo_360p" type="video/mp4">
+    </video>
+<!-- <video width="320" height="240" controls="controls" autoplay="autoplay">
+    <source src="D://MP4//20210608_234659.mp4" type="video/mp4" />
+</video> -->
+
+</body>
+</html>
