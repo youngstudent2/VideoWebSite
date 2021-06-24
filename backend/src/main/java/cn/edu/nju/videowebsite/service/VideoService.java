@@ -82,7 +82,7 @@ public class VideoService {
 
     public InputStream getVideoStream(String videoName, String resolution) throws Exception {
         InputStream stream = null;
-        if (resolution == "origin") {
+        if (resolution.equals("origin")) {
             stream = minioClient.getObject(MinioProp.MINIO_BUCKET, videoName);
         }
         else if (resolution.equals("1080p")) {

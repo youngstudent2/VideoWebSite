@@ -34,7 +34,7 @@ import io.minio.messages.Item;
 
 @Service
 public class VideoService {
-    private final static java.util.logging.Logger logger = LoggerFactory.getLogger(VideoService.class);
+    private final static Logger logger = LoggerFactory.getLogger(VideoService.class);
 
     @Autowired
     private MinioClient minioClient;
