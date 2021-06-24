@@ -56,5 +56,10 @@ haproxy -f test\haproxy\upload.cfg
 
 gatling测试
 
+下载
 
+![image-20210625003917702](.\assets\image-20210625003917702.png)
 
+上传
+
+![image-20210625004155412](D:\github\VideoWebSite\assets\image-20210625004155412.png)
