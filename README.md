@@ -19,6 +19,18 @@
 
 ### 运行方式
 
+运行`minio`，在`htp://localhost:9293`可访问管理界面
+
+```
+docker-compose  -f docker_minio.yml -p minio  up -d --build
+```
+
+运行`rabbitmq`，监听15672端口
+
+```
+docker run -d -p 5672:5672 -p 15672:15672 --name rabbit rabbitmq:3-management
+```
+
 运行`backend`，默认监听8090端口
 
 ```shell
