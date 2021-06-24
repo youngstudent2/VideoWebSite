@@ -4,10 +4,10 @@
           <el-col :span="22" :offset="2">
               <el-table :data="videos" max-height="600" style="width:100%">
                   <el-table-column
-                    prop="name" label="视频名" width="500"
+                    prop="name" label="视频名" width="300"
                   ></el-table-column>
                   <el-table-column
-                    prop="size" label="大小" width="100"
+                    prop="size" label="原画大小" width="200"
                   ></el-table-column>
                   <el-table-column
                     prop="lastModified" label="最近更改" width="180"

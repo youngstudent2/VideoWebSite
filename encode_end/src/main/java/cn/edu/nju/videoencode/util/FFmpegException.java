@@ -1,4 +1,4 @@
-package cn.edu.nju.videowebsite.util;
+package cn.edu.nju.videoencode.util;
 
 public class FFmpegException extends Exception {
 
