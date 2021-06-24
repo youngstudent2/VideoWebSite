@@ -13,7 +13,9 @@
 - 部署：Docker
 - 压力测试：Gatling
 
-该项目主要分为两个服务，`backend`下提供视频上传、下载、视频信息列表等基础api，`encode_end`下监听RabbitMQ的消息队列，提供视频编码服务
+该项目主要分为两个服务，`backend`下提供视频上传、下载、视频信息列表等基础api，`encode_end`下监听RabbitMQ的消息队列，提供视频编码服务（360p,720p,1080p）
+
+[项目演示](https://www.bilibili.com/video/BV1Qo4y1k7uW/)
 
 ### 运行方式
 
