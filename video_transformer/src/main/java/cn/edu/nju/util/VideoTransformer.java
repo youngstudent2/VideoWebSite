@@ -3,9 +3,6 @@ package cn.edu.nju.videowebsite.util;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class VideoTransformer {
     
     public boolean transform(String ffmpegPath, String oldPath, String newPath, String resolution) throws FFmpegException {

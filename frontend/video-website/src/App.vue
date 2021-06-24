@@ -1,23 +1,26 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+  <el-container id="app">
+    <el-header>
+      <Header/>
+    </el-header>
+    <el-main>
+    <transition name="fade">
+      <router-view/>
+    </transition>
+    </el-main>
+  </el-container>
 </template>
 
 <script>
+import Header from "@/components/Header";
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    Header,
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>

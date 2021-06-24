@@ -17,7 +17,26 @@ public class MinioConfig {
 
     @Bean
     public MinioClient minioClient() throws InvalidPortException, InvalidEndpointException {
-        MinioClient  client = new MinioClient(minioProp.getEndPoint(),minioProp.getAccesskey(),minioProp.getSecretkey());
-        return  client;
+        MinioClient client = new MinioClient(minioProp.getEndPoint(),minioProp.getAccesskey(),minioProp.getSecretkey());
+        try {
+            boolean isExist = client.bucketExists("video");
+            if (!isExist) {
+                client.makeBucket("video");
+            }
+            isExist = client.bucketExists("1080p");
+            if (!isExist) {
+                client.makeBucket("1080p");
+            }
+            isExist = client.bucketExists("720p");
+            if (!isExist) {
+                client.makeBucket("720p");
+            }
+            isExist = client.bucketExists("360p");
+            if (!isExist) {
+                client.makeBucket("360p");
+            }
+        } catch (Exception e) {
+        }
+        return client;
     }
 }
